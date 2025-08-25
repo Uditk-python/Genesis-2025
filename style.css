@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+* a {
+    text-decoration: none;
+    color: black;
+}
+:root {
+    --primary-color:white;
+    --secondary-color:black;
+}
+.dark-theme{
+    --primary-color:black;
+    --secondary-color:white;
+} 
+body {
+    background-color: var(--primary-color);
+}
+.title {
+    height: 300px;
+    width: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#registration {
+    background-color: orange;
+    font-size: 1.2rem;
+}
+.dark-mode-button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    margin-right: 0;
+    margin-left: 95%;
+}
+/* hero-section */
+.hero-section {
+    margin: 20px 0px 30px 0px;
+    padding: 0px 70px 0px 70px;
+    color: var(--secondary-color);
+}
+#description-question {
+    color: blue;
+    font-size: 1.7rem;
+}
+.facilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px 0px 90px;
+    gap: 5px;
+}
+.event_highlights-circle {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgb(235, 228, 6);
+    height: 6.25rem;
+    width: 6.25rem;
+    font-size: 3rem;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.event_highlights-box h3{
+    text-align: center;
+    color:var(--secondary-color);
+}
+.line {
+    width: 20rem;
+    border: 1px solid  var(--secondary-color);
+}
+#cash {
+    font-size: 1.1rem;
+}
+.box:hover {
+    background-color: rgb(237, 234, 234);
+    border-color:3px solid rgb(136, 132, 12);
+    color: black;
+}
+
+/* timeline */
+
+.timeline {
+    margin-top: 50px;
+    padding: 0px 70px 0px 70px;
+}
+.vertical-line {
+    height: 400px;
+    border: 2px solid rgb(216, 75, 75);
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 400px;
+    }
+}
+
+.outline-box {
+    height: 100px;
+    width: 50%;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    animation: movebox 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movebox {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.outline-box:nth-child(2){
+    animation-delay: 0s;
+}
+.outline-box:nth-child(3){
+    animation-delay: 1s;
+}
+.outline-box:nth-child(4){
+    animation-delay: 2s;
+}
+.outline-box:nth-child(5){
+    animation-delay: 3s;
+}
+.right {
+    margin-left: 50%;
+}
+.left-box {
+    height: 100%;
+    width: 50%;
+    background-color: var(--primary-color);
+    margin-left: 45%;
+    border: 3px solid rgb(82 119 242);
+    border-radius: 6px;
+    text-align: center;
+    padding-top:1.25rem;
+    background-color: rgb(202 196 218);
+
+}
+.right-box {
+    height: 100%;
+    width: 50%;
+    border: 3px solid rgb(82 119 242);
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 1.25rem;
+    background-color: rgb(202 196 218);
+}
+
+.left-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid  rgb(82 119 242);
+
+}
+.right-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid  rgb(82 119 242);
+    margin-left: 4%;
+}
+.registration_form {
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.registration_form a{
+    color: rgb(50, 50, 213);
+    font-size: 1rem;
+}
+
+/* contact details */
+.contact {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.contact h5{
+    font-size: 1.5rem;
+}
+.contact a{
+    color: rgb(50, 50, 213);
+}
+.contact p{
+    margin-top: 4px;
+    font-size: 1.2rem;
+}
+
+/* footer */
+footer {
+    background-color:#2c3847;
+    height: 3rem;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
